@@ -1,6 +1,6 @@
+$(function () {
 // Page will have images of characters
 // When a user clicks an image, generate a random quote based on the character
-
 // Create an array with Kevin Audio Clips
 audioFiles = {
     kevinAudio : [
@@ -97,11 +97,11 @@ $('.character').on('click', function () {
 
 
 
-$('.character').on('click', function () {
-    if ($(this).find('img').hasClass('wobble-hor-bottom')){
-        removeClass('wobble-hor-bottom');
-    } 
-});
+// $('.character').on('click', function () {
+//     if ($(this).find('img').hasClass('wobble-hor-bottom')){
+//         removeClass('wobble-hor-bottom');
+//     } 
+// });
 
 
 // Technical challenge:
@@ -131,8 +131,10 @@ anime.timeline({ loop: true })
 
 // Scroll Reveal & Smooth Scroll for Main Section
 
-ScrollReveal().reveal('.character', {delay: 500});
+    ScrollReveal().reveal('.character', {delay: 500});
 
-$('a').smoothScroll({
-    offset: 50,
+    $('a').smoothScroll({
+        offset: 50,
+    });
+
 });
