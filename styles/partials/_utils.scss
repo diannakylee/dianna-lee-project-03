@@ -1,0 +1,52 @@
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-size: 1.6rem;
+	background: gold;
+	background-repeat: repeat;
+	font-family: "Francois One"
+}
+
+h1, h2, h3, h4, figure, img, button, p {
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	width: 100%;
+	display: block;
+}
+
+a {
+	color: white;
+	padding: 15px;
+}
+
+.wrapper {
+	max-width: 1280px;
+	width: 88%;
+	margin: 0 auto;
+}
+
+@mixin bp($point) {
+  @if $point == 1068 {
+    @media (max-width: 1068px) { @content; }
+  }
+   @else if $point == 980 {
+    @media (max-width: 980px) { @content; }
+  }
+    @else if $point == 870 {
+    @media (max-width: 870px)  { @content; }
+  }
+  @else if $point == 736 {
+    @media (max-width: 736px)  { @content; }
+  }
+  @else if $point == 570 {
+    @media (max-width: 570px) { @content; }
+  }
+  @else if $point == 480 {
+    @media (max-width: 480px)  { @content; }
+  }
+}
